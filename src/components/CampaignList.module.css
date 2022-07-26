@@ -9,12 +9,21 @@
     color: white;
     font-family: "Nunito", sans-serif;
 }
+.listGroup p {
+    padding-left: 25px;
+}
+.listGroup p:first-child {
+    padding-top: 25px;
+}
+.listGroup div {
+    padding-bottom: 25px;
+}
 
-.span {
+p span {
     font-weight: bold;
     text-transform: uppercase;
     padding-left: 6px;
-    color: #e57118;
+    color: rgba(252, 176, 69, 1);
 }
 
 .buttons {

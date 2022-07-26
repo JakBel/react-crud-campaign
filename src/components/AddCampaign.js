@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/Context";
 import { Link, useHistory } from "react-router-dom";
 import { v4 } from "uuid";
-import { Button, Form, FormGroup, Input, Label } from "reactstrap";
+import { Form, FormGroup, Input, Label } from "reactstrap";
 import classes from "./FormModule.module.css";
 
 const AddCampaign = () => {
@@ -153,9 +153,9 @@ const AddCampaign = () => {
                 />
             </FormGroup>
             <FormGroup className={classes.buttons}>
-                <Button className={classes.button} type="submit">
+                <button className={classes.button} type="submit">
                     Submit
-                </Button>
+                </button>
                 <Link className={classes.button} to="/">
                     Cancel
                 </Link>
