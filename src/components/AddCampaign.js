@@ -40,33 +40,18 @@ const AddCampaign = () => {
     };
 
     const addCampaignForm = () => {
-        if (
-            name === "" ||
-            keywords === "" ||
-            amount === 0 ||
-            funds === 0 ||
-            status === "" ||
-            town === "" ||
-            radius === 0
-        ) {
-            alert("Complete all the fields!")
-            return false;
-        } else if (amount < 0 || funds < 0 || radius < 0) {
-            alert("Amount, funds and radius must be positive");
-        } else {
-            const newCampaign = {
-                id: v4(),
-                name,
-                keywords,
-                amount,
-                funds,
-                status,
-                town,
-                radius,
-            };
-            addCampaign(newCampaign);
-            history.push("/");
-        }
+        const newCampaign = {
+            id: v4(),
+            name,
+            keywords,
+            amount,
+            funds,
+            status,
+            town,
+            radius,
+        };
+        addCampaign(newCampaign);
+        history.push("/");
     };
 
     return (
